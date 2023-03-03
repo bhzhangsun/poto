@@ -1,0 +1,32 @@
+.home {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    .asider {
+        width: 200px;
+        flex-shrink: 0;
+    }
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .opener {
+            display: flex;
+            flex-direction: column;
+            
+            & > img {
+                width: 260px;
+                margin-bottom: 12px;
+                object-fit: contain;
+            }
+
+            .open_btn {
+                margin-top: 16px;
+            }
+        }
+    }
+}

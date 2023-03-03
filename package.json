@@ -1,0 +1,33 @@
+{
+  "name": "poto",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:wasm": "wasm-pack build --target web -d ../public/moji-wasm ./src-wasm",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@fluentui/react-components": "^9.7.1",
+    "@tauri-apps/api": "^1.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "moji-wasm": "./public/moji-wasm"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@tauri-apps/cli": "^1.2.0",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react": "^2.2.0",
+    "less": "^4.1.3",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3",
+    "vite": "^3.2.4"
+  }
+}
